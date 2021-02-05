@@ -41,7 +41,7 @@ public class NumTank
 	 * thread created it.
 	 * @param thread name of current thread.
 	 */
-	public void addValue(String thread)
+	public synchronized void addValue(String thread)
 	{
 		numList.add(new NumberEntry(nextNumber++,thread));
 	}
